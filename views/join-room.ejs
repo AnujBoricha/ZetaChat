@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<div class="container mt-2">
+  <h2 class="text-warning text-center">Join Room</h2>
+  <div class="text-center">
+    <img src="/romm-bg.webp" class="img-fluid profile-image-pic img-thumbnail  my-3"
+      width="550px" height="auto" alt="profile">
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <div class="card ">
+        <div class="card-body">
+          <form action="/join-room" method="POST">
+            <div class="form-group">
+              <label for="roomname">Room Name</label>
+              <input type="text" class="form-control" name="roomname" placeholder="RoomName">
+            </div>
+            <div class="form-group">
+              <label for="roompassword">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Key">
+            </div>
+            <button type="submit" class="btn btn-dark">Create</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<%- include('partials/footer') %>

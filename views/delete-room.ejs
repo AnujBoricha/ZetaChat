@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+
+
+ <div class="container mt-2">
+  
+  <div class="text-center">
+    <h2 class="text-danger"> Delete Room </h2>
+    <img src="domain2.webp" class="img-fluid profile-image-pic img-thumbnail  my-3"
+      width="550px" height="auto" alt="profile">
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <div class="card ">
+        <div class="card-body">
+          <form action="/delete-room" method="POST">
+            <div class="form-group">
+              <label for="roomname">Room Name</label>
+              <input type="text" class="form-control" name="roomName" placeholder="RoomName">
+            </div>
+            <div class="form-group">
+              <label for="roompassword">Room Password</label>
+              <input type="password" class="form-control" name="roomPassword" placeholder="Roomkey">
+            </div>
+            <button type="submit" class="btn btn-outline-danger"> <i class="fa-solid fa-ban text-danger"></i> Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%- include('partials/footer') %>
